@@ -1,54 +1,20 @@
+@techreport{extended,
+title = "Data Management in Microservices: State of the Practice, Challenges, and Research Directions (Extended Version)",
+author = "Rodrigo Laigner and Yongluan Zhou and Marcos Antonio Vaz Salles and Yijian Liu and Marcos Kalinowski",
+year = "2021",
+type = "WorkingPaper",
+url = {https://static-curis.ku.dk/portal/files/257545323/preprint.pdf}
+}
+
 @inproceedings{LaignerKLSO20,
   author    = {Rodrigo Laigner and Marcos Kalinowski and Pedro Diniz and Leonardo Barros and Carlos Cassino and Melissa Lemos and Darlan Arruda and Sergio Lifschitz and Yongluan Zhou},
   title     = {From a Monolithic Big Data System to a Microservices Event-Driven Architecture},
   abstract  = {[Context] Data-intensive systems, a.k.a. big data systems (BDS), are software systems that handle a large volume of data in the presence of performance quality attributes, such as scalability and availability. Before the advent of big data management systems (e.g. Cassandra) and frameworks (e.g. Spark), organizations had to cope with large data volumes with custom-tailored solutions. In particular, a decade ago, Tecgraf/PUC-Rio developed a system to monitor truck fleet in real-time and proactively detect events from the positioning data received. Over the years, the system evolved into a complex and large obsolescent code base involving a hard maintenance process. [Goal] We report our experience on replacing a legacy BDS with a microservice-based event-driven system. [Method] We applied action research, investigating the reasons that motivate the adoption of a microservice-based event-driven architecture, intervening to define the new architecture, and documenting the challenges and lessons learned. [Results] We perceived that the resulting architecture enabled easier maintenance and fault-isolation. However, the myriad of technologies and the complex data flow were perceived as drawbacks. Based on the challenges faced, we highlight opportunities to improve the design of big data reactive systems. [Conclusions] We believe that our experience provides helpful takeaways for practitioners modernizing systems with data-intensive requirements.},
   booktitle = {46th Euromicro Conference on Software Engineering and Advanced Applications, {SEAA} 2020, Portorož, Slovenia, Aug 26-28},
-  pages     = {1--8},
   year      = {2020},
-  note = {<font color="red">Accepted for Publication (to appear)</font>},
+  pages={213-220},
+  doi={10.1109/SEAA51224.2020.00045}
   url       = {https://www.researchgate.net/publication/341822188_From_a_Monolithic_Big_Data_System_to_a_Microservices_Event-Driven_Architecture}
-}
-
-@mastersthesis{LaignerMaster20,
-  author    = {Rodrigo Nunes Laigner}, 
-  title     = {Cataloging Dependency Injection Anti-Patterns in Software Systems},
-  school    = {Pontifical Catholic University of Rio de Janeiro (PUC-Rio)},
-  year      = {2020},
-  doi = {https://doi.org/10.17771/PUCRio.acad.48681},
-  url       = {https://www.maxwell.vrac.puc-rio.br/colecao.php?strSecao=resultado&nrSeq=48681@2}
-}
-
-@mastersthesis{LaignerBachelor17,
-  type      = {Bachelor's Thesis},
-  author    = {Rodrigo Nunes Laigner}, 
-  title     = {Desenvolvimento de sistemas big data: um mapeamento sistemático da literatura},
-  school    = {Universidade Federal Fluminense (UFF)},
-  year      = {2017},
-  doi       = {https://doi.org/10.13140/RG.2.2.29898.00965},
-  url       = {https://www.researchgate.net/publication/327230400_Desenvolvimento_de_Sistemas_Big_Data_Um_Mapeamento_Sistematico_da_Literatura}
-}
-
-@inproceedings{CarneiroLKWB17,
-  author    = {Carneiro, G. and Laigner, R. and Kalinowski, M. and Winkler, D. and Biffl, S.},
-  title     = {Investigating the influence of inspector learning styles on design inspections: Findings of a quasi-experiment},
-  abstract  = {Software inspections are an efficient mean to improve quality. Learning Styles (LS) have been used to detect an individual's preferences to acquire and process information according to different dimensions. For requirements inspections, inspection teams with different LSs showed more effective at detecting defects than teams with similar LS. The goal of this paper is to investigate the influence of inspector's LS on the effectiveness and efficiency of design inspections. We conducted a quasi-experiment using a subset of a real requirements document and corresponding design diagrams with seeded defects, characterizing each of the participants according to their LSs. We also implemented a script to combine inspectors into nominal inspection teams. We observed that, for design inspections, teams with similar LSs were more effective and efficient than teams with dissimilar LSs. Design inspections seem to be affected more by other factors, such as defect detection techniques, than from selecting inspectors based on their learning styles. However, replications are needed to reinforce our results.},
-  booktitle = {CIbSE 2017 - XX Ibero-American Conference on Software Engineering},
-  pages={222-235},
-  year={2017},
-  url = {https://www.researchgate.net/publication/315447935_Investigating_the_Influence_of_Inspector_Learning_Styles_on_Design_Inspections_Findings_of_a_Quasi-Experiment}
-}
-
-@incollection{AlvesLNRLK20,
-  author = {Paulo Henrique Alves and Rodrigo Laigner and Rafael Nasser and Gustavo Robichez and Helio Lopes and Marcos Kalinowski},
-  title = {Desmistificando Blockchain: Conceitos e Aplicações},
-  editor = {Cristiano Maciel and José Viterbo},
-  booktitle = {Computação e Sociedade},
-  publisher = {Sociedade Brasileira de Computação},
-  year = {2020},
-  pages = {1-24},
-  note = {<font color="red">Accepted for Publication (to appear)</font>},              
-  chapter = {},
-  url = {https://www.researchgate.net/publication/327060805_Desmistificando_Blockchain_Conceitos_e_Aplicacoes},
 }
 
 @inproceedings{LaignerKLSO18,
@@ -61,26 +27,3 @@
   url       = {https://www.researchgate.net/publication/326607927_A_Systematic_Mapping_of_Software_Engineering_Approaches_to_Develop_Big_Data_Systems},
   doi       = {10.1109/SEAA.2018.00079},
 }
-
-@inproceedings{LaignerKCMG19,
- author = {Rodrigo Laigner and Marcos Kalinowski and Luiz Carvalho and Diogo Mendonca and Alessandro Garcia},
- title = {Towards a Catalog of Java Dependency Injection Anti-Patterns},
- abstract = {[Context] Dependency Injection (DI) is a commonly applied mechanism to decouple classes from their dependencies in order to provide better modularization of software. In the context of Java, the availability of a DI specification and popular frameworks, such as Spring, facilitate DI usage in software projects. However, bad DI implementation practices can have negative consequences. Even though the literature suggests the existence of DI anti-patterns, there is no detailed catalog of such bad practices. Moreover, there is no evidence on their occurrence and perceived usefulness from the developer’s point of view. [Goal] Our goal is to review the reported DI anti-patterns in order to analyze their completeness and to propose and evaluate a novel catalog of DI anti-patterns in the context of Java. [Method] We propose an initial catalog containing twelve Java DI anti-patterns. We selected four open source software projects that adopt a DI framework and developed a tool to statically analyze the occurrence of the DI anti-patterns within their source code. Also, we conducted a survey through face to face interviews with three experienced developers that regularly apply DI. [Results] At least nine different DI anti-patterns appeared in each analyzed project. In addition, the feedback received from the developers confirmed their relevance and the importance of investing further effort towards a catalog. [Conclusion] The results indicate that the initial catalog contains Java DI anti-patterns that occur in practice and are useful. Sharing it with practitioners may help them to avoid such anti-patterns. Sharing it with the research community will enable further improving the catalog.},
- booktitle = {Proceedings of the 33rd Brazilian Symposium on Software Engineering, {SBES'19}, Salvador, Brazil, September 23-27},
- year = {2019},
- note = {<font color="red">SBES 2019 Third Best Paper Award!</font>}, 
- pages = {1-10},
- url = {https://www.researchgate.net/publication/334680061_Towards_a_Catalog_of_Java_Dependency_Injection_Anti-Patterns},
- doi = {10.1145/3350768.3350771},
-} 
-
-@inproceedings{LaignerLKPS19,
- author = {Rodrigo Laigner and Sergio Lifschitz and Marcos Kalinowski and Marcus Poggi and Marcos Vaz Salles},
- title = {Towards a Technique for Extracting Relational Actors from Monolithic Applications},
- abstract = {Relational actors, or reactors for short, integrate the actor model with the relational data model, providing an abstraction for enabling actor-relational database systems. However, as a novel model of computation for databases, there is no extensive work on reasoning about reactor modeling. To close this gap, this paper aims to propose as well as evaluate a technique to extract reactors from a monolithic system. For evaluation, we selected a REST-based open-source OLTP system in which a decomposition to microservices was conducted and applied our technique on its predecessor monolithic version. Our technique led to the same set of decisions, regarding table and behavior selection, taken by experts when decomposing the same system into microservices. The proposed technique can be seen as a first step towards supporting practitioners in decomposing OLTP systems into reactors.},
- booktitle = {Proceedings of the 34th Brazilian Symposium on Databases, {SBBD'19}, Fortaleza, Brazil, October 7-10},
- year = {2019},
- pages = {1-10},
- url = {https://www.researchgate.net/publication/335401847_Towards_a_Technique_for_Extracting_Relational_Actors_from_Monolithic_Applications},
- doi = {10.5753/sbbd.2019.8814},
-} 
