@@ -1,0 +1,10 @@
+.social-icons li {
+    width: 25%;
+}
+
+#profile .title h4 {
+    font-size: 14px;
+    font-weight: 300;
+    color: #aaa;
+    margin: 0px 0 0px 0;
+}
