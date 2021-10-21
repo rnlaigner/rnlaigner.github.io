@@ -5,6 +5,8 @@ publisher = {Association for Computing Machinery},
 title = {A Distributed Database System for Event-based Microservices},
 series = {DEBS '21},
 year = {2021},
+pages={25–30},
+doi={10.1145/3465480.3466919},
 abstract = {Microservice architectures are an emerging industrial approach to build large scale and event-based systems. In this architectural style, an application is functionally partitioned into several small and autonomous building blocks, so-called microservices, communicating and exchanging data with each other via events. By pursuing a model where fault isolation is enforced at microservice level, each microservice manages their own database, thus database systems are not shared across microservices. Developers end up encoding substantial data management logic in the application-tier and encountering a series of challenges on enforcing data integrity and maintaining data consistency across microservices. In this vision paper, we argue that there is a need to rethink how database systems can better support microservices and relieve the burden of handling complex data management tasks faced by programmers. We envision the design and research opportunities for a novel distributed database management system targeted at event-driven microservices.},
 url = {https://www.researchgate.net/publication/352020135_A_Distributed_Database_System_for_Event-based_Microservices}
 }
@@ -16,6 +18,8 @@ publisher = {Association for Computing Machinery},
 title = {Enforcing Consistency in Microservice Architectures through Event-based Constraints},
 series = {DEBS '21},
 year = {2021},
+pages={180–183},
+doi={10.1145/3465480.3467839},
 abstract = {Microservice architectures are an emerging paradigm for developing event-driven applications. By prescribing that an application is decomposed into small and independent components, each encapsulating its own state and communicating via asynchronous events, new components and events can be easily integrated into the system. However, by pursuing a model where events are generated and processed at the application-level, developers have a hard time to safeguard arbitrary event interleavings from doing harm to application safety. To address these challenges, we start by analyzing event-driven microservice open-source applications to identify unsafe interleavings. Next, we categorize event-based constraints to address such unsafe encodings, providing an easy-to-use guide for microservice developers. Finally, we introduce StreamConstraints, a library built on top of Kafka Streams designed to enforce explicit event-based constraints defined by developers. We showcase StreamConstraints based on the case of a popular event-driven microservice system, and demonstrate how it could benefit from event-based constraints to ensure application safety.},
 url = {https://www.researchgate.net/publication/352019905_Enforcing_Consistency_in_Microservice_Architectures_through_Event-based_Constraints}
 }
@@ -26,9 +30,11 @@ booktitle = {The 15th ACM International Conference on Distributed and Event-base
 doi = {10.1145/3465480.3467838},
 isbn = {9781450385558},
 publisher = {Association for Computing Machinery},
-title = {HawkEDA : A tool for quantifying data integrity violations in event-driven microservices},
+title = {HawkEDA : A Tool for Quantifying Data Integrity Violations in Event-driven Microservices},
 series = {DEBS '21},
 year = {2021},
+pages={176–179},
+doi={10.1145/3465480.3467838},
 abstract  = {A microservice architecture advocates for subdividing an application into small and independent components, each communicating via well-defined APIs or asynchronous events, to allow for higher scalability, availability, and fault isolation. However, the implementation of substantial amount of data management logic at the application-tier and the existence of functional dependencies cutting across microservices create a great barrier for developers to reason about application safety and performance trade-offs. To fill this gap, this work presents HawkEDA, the first data management tool that allows practitioners to experiment their microservice applications with different real-world workloads to quantify the amount of data integrity anomalies. In our demonstration, we present a case study of a popular open-source event-driven microservice to showcase the interface through which developers specify application semantics and the flexibility of HawkEDA.},
 url = {https://www.researchgate.net/publication/352020105_HawkEDA_A_Tool_for_Quantifying_Data_Integrity_Violations_in_Event-driven_Microservices}
 }
@@ -40,12 +46,12 @@ url = {https://www.researchgate.net/publication/352020105_HawkEDA_A_Tool_for_Qua
   year={2021},
   volume={14},
   number={13},
-  pages={},
+  pages={3348-3361},
   abstract={Microservices have become a popular architectural style for data-driven applications, given their ability to functionally decompose an application into small and autonomous services to achieve scalability, strong isolation, and specialization of database systems to the workloads and data formats of each service. Despite the accelerating industrial adoption of this architectural style, an investigation of the state of the practice and challenges practitioners face regarding data management in microservices is lacking. To bridge this gap, we conducted a systematic literature review of representative articles reporting the adoption of microservices, we analyzed a set of popular open-source microservice applications, and we conducted an online survey to cross-validate the findings of the previous steps with the perceptions and experiences of over 120 experienced practitioners and researchers.
 Through this process, we were able to categorize the state of practice of data management in microservices and observe several foundational challenges that cannot be solved by software engineering practices alone, but rather require system-level support to alleviate the burden imposed on practitioners. We discuss the shortcomings of state-of-the-art database systems regarding microservices and we conclude by devising a set of features for microservice-oriented database systems.},
-  note={<font color="red">Accepted for Publication.</font>},
   url = {https://arxiv.org/abs/2103.00170},
-  doi={}}
+  doi={10.14778/3484224.3484232}
+}
 
 @techreport{extended,
   title={Data Management in Microservices: State of the Practice, Challenges, and Research Directions}, 
@@ -77,4 +83,26 @@ url = {https://www.researchgate.net/publication/349704597_Data_Management_in_Mic
   year      = {2018},
   url       = {https://www.researchgate.net/publication/326607927_A_Systematic_Mapping_of_Software_Engineering_Approaches_to_Develop_Big_Data_Systems},
   doi       = {10.1109/SEAA.2018.00079},
+}
+
+@article{LAIGNER2021111125,
+title = {Cataloging dependency injection anti-patterns in software systems},
+journal = {Journal of Systems and Software},
+pages = {111125},
+year = {2021},
+issn = {0164-1212},
+doi = {https://doi.org/10.1016/j.jss.2021.111125},
+url = {https://www.sciencedirect.com/science/article/pii/S0164121221002223},
+author = {Rodrigo Laigner and Diogo Mendonça and Alessandro Garcia and Marcos Kalinowski},
+keywords = {Dependency injection, Dependency inversion, Inversion of control, Anti-pattern},
+abstract = {Context:
+Dependency Injection (DI) is a commonly applied mechanism to decouple classes from their dependencies in order to provide higher modularization. However, bad DI practices often lead to negative consequences, such as increasing coupling. Although white literature conjectures about the existence of DI anti-patterns, there is no evidence on their practical relevance, usefulness, and generality.
+Objective:
+The objective of this study is to propose and evaluate a catalog of DI anti-patterns and associated refactorings.
+Methodology:
+We reviewed existing reported DI anti-patterns in order to analyze their completeness. The limitations found in literature motivated proposing a novel catalog of 12 DI anti-patterns. We developed a tool to statically analyze the occurrence level of the candidate DI anti-patterns in both open-source and industry projects. Next, we survey practitioners to assess their perception on the relevance, usefulness, and their willingness on refactoring anti-pattern instances of the catalog.
+Results:
+Our static code analyzer tool showed a relative recall of 92.19% and high average precision. It revealed that at least 9 different DI anti-patterns appeared frequently in the analyzed projects. Besides, our survey confirmed the perceived relevance of the catalog and developers expressed their willingness to refactor instances of anti-patterns from source code.
+Conclusion:
+The catalog contains DI anti-patterns that occur in practice and that are perceived as useful. Sharing it with practitioners may help them to avoid such anti-patterns, thus improving source-code quality.}
 }
