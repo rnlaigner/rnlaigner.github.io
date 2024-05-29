@@ -1,3 +1,22 @@
+@article{laigner2024benchmarking,
+  title={Benchmarking Data Management Systems for Microservices}, 
+  author={Rodrigo Laigner and Yongluan Zhou},
+  year={2024},
+  journal={IEEE 40th International Conference on Data Engineering (ICDE)}, 
+  eprint={2405.11529},
+  archivePrefix={arXiv},
+  primaryClass={cs.DB}
+}
+
+@techreport{benchmark,
+  title={A Benchmark for Data Management in Microservices}, 
+  author={Rodrigo Laigner and Zhexiang Zhang and Yijian Liu and Leonardo Gomes and Yongluan Zhou},
+  year={2023},
+  type = {WorkingPaper},
+  abstract  = {Microservice architectures emerged as a popular architecture for designing scalable distributed applications. Although microservices have been extensively employed in industry settings for over a decade, there is little understanding of the data management challenges that arise in these applications. As a result, it is difficult to advance data system technologies for supporting microservice applications. To fill this gap, we present Online Marketplace, a microservice benchmark that incorporates core data management challenges that existing benchmarks have not sufficiently addressed. These challenges include transaction processing, query processing, event processing, constraint enforcement, and data replication. We have defined criteria for various data management issues to enable proper comparison across data systems and platforms. After specifying the benchmark, we present the challenges we faced in creating workloads that accurately reflect the dynamic state of the microservices. We also discuss issues that we encountered when implementing Online Marketplace in state-of-the-art data platforms and meeting the criteria. Our evaluation demonstrates that the benchmark is a valuable tool for testing important properties sought by microservice practitioners. As a result, our proposed benchmark will facilitate the design of future data systems to meet the expectations of microservice practitioners.},
+  url = {https://www.researchgate.net/publication/379662990_A_Benchmark_for_Data_Management_in_Microservices}
+}
+
 @inproceedings{virtual-ms,
 author = {Rodrigo Laigner and Yongluan Zhou and Marcos Antonio Vaz Salles},
 booktitle = {The 15th ACM International Conference on Distributed and Event-based Systems (DEBS '21), June 28-July 2, 2021, Virtual Event, Italy},
@@ -12,16 +31,16 @@ url = {https://www.researchgate.net/publication/352020135_A_Distributed_Database
 }
 
 @inproceedings{streamconstraints,
-author = {Anna Lesniak and Rodrigo Laigner and Yongluan Zhou},
-booktitle = {The 15th ACM International Conference on Distributed and Event-based Systems (DEBS '21), June 28-July 2, 2021, Virtual Event, Italy},
-publisher = {Association for Computing Machinery},
-title = {Enforcing Consistency in Microservice Architectures through Event-based Constraints},
-series = {DEBS '21},
-year = {2021},
-pages={180–183},
-doi={10.1145/3465480.3467839},
-abstract = {Microservice architectures are an emerging paradigm for developing event-driven applications. By prescribing that an application is decomposed into small and independent components, each encapsulating its own state and communicating via asynchronous events, new components and events can be easily integrated into the system. However, by pursuing a model where events are generated and processed at the application-level, developers have a hard time to safeguard arbitrary event interleavings from doing harm to application safety. To address these challenges, we start by analyzing event-driven microservice open-source applications to identify unsafe interleavings. Next, we categorize event-based constraints to address such unsafe encodings, providing an easy-to-use guide for microservice developers. Finally, we introduce StreamConstraints, a library built on top of Kafka Streams designed to enforce explicit event-based constraints defined by developers. We showcase StreamConstraints based on the case of a popular event-driven microservice system, and demonstrate how it could benefit from event-based constraints to ensure application safety.},
-url = {https://www.researchgate.net/publication/352019905_Enforcing_Consistency_in_Microservice_Architectures_through_Event-based_Constraints}
+  author = {Anna Lesniak and Rodrigo Laigner and Yongluan Zhou},
+  booktitle = {The 15th ACM International Conference on Distributed and Event-based Systems (DEBS '21), June 28-July 2, 2021, Virtual Event, Italy},
+  publisher = {Association for Computing Machinery},
+  title = {Enforcing Consistency in Microservice Architectures through Event-based Constraints},
+  series = {DEBS '21},
+  year = {2021},
+  pages={180–183},
+  doi={10.1145/3465480.3467839},
+  abstract = {Microservice architectures are an emerging paradigm for developing event-driven applications. By prescribing that an application is decomposed into small and independent components, each encapsulating its own state and communicating via asynchronous events, new components and events can be easily integrated into the system. However, by pursuing a model where events are generated and processed at the application-level, developers have a hard time to safeguard arbitrary event interleavings from doing harm to application safety. To address these challenges, we start by analyzing event-driven microservice open-source applications to identify unsafe interleavings. Next, we categorize event-based constraints to address such unsafe encodings, providing an easy-to-use guide for microservice developers. Finally, we introduce StreamConstraints, a library built on top of Kafka Streams designed to enforce explicit event-based constraints defined by developers. We showcase StreamConstraints based on the case of a popular event-driven microservice system, and demonstrate how it could benefit from event-based constraints to ensure application safety.},
+  url = {https://www.researchgate.net/publication/352019905_Enforcing_Consistency_in_Microservice_Architectures_through_Event-based_Constraints}
 }
 
 @inproceedings{HawkEDA,
@@ -46,20 +65,9 @@ url = {https://www.researchgate.net/publication/352020105_HawkEDA_A_Tool_for_Qua
   volume={14},
   number={13},
   pages={3348-3361},
-  abstract={Microservices have become a popular architectural style for data-driven applications, given their ability to functionally decompose an application into small and autonomous services to achieve scalability, strong isolation, and specialization of database systems to the workloads and data formats of each service. Despite the accelerating industrial adoption of this architectural style, an investigation of the state of the practice and challenges practitioners face regarding data management in microservices is lacking. To bridge this gap, we conducted a systematic literature review of representative articles reporting the adoption of microservices, we analyzed a set of popular open-source microservice applications, and we conducted an online survey to cross-validate the findings of the previous steps with the perceptions and experiences of over 120 experienced practitioners and researchers.
-Through this process, we were able to categorize the state of practice of data management in microservices and observe several foundational challenges that cannot be solved by software engineering practices alone, but rather require system-level support to alleviate the burden imposed on practitioners. We discuss the shortcomings of state-of-the-art database systems regarding microservices and we conclude by devising a set of features for microservice-oriented database systems.},
+  abstract={Microservices have become a popular architectural style for data-driven applications, given their ability to functionally decompose an application into small and autonomous services to achieve scalability, strong isolation, and specialization of database systems to the workloads and data formats of each service. Despite the accelerating industrial adoption of this architectural style, an investigation of the state of the practice and challenges practitioners face regarding data management in microservices is lacking. To bridge this gap, we conducted a systematic literature review of representative articles reporting the adoption of microservices, we analyzed a set of popular open-source microservice applications, and we conducted an online survey to cross-validate the findings of the previous steps with the perceptions and experiences of over 120 experienced practitioners and researchers. Through this process, we were able to categorize the state of practice of data management in microservices and observe several foundational challenges that cannot be solved by software engineering practices alone, but rather require system-level support to alleviate the burden imposed on practitioners. We discuss the shortcomings of state-of-the-art database systems regarding microservices and we conclude by devising a set of features for microservice-oriented database systems.},
   url = {http://www.vldb.org/pvldb/vol14/p3348-laigner.pdf},
   doi={10.14778/3484224.3484232}
-}
-
-@techreport{extended,
-  title={Data Management in Microservices: State of the Practice, Challenges, and Research Directions}, 
-author={Rodrigo Laigner and Yongluan Zhou and Marcos Antonio Vaz Salles and Yijian Liu and Marcos Kalinowski},
-  year={2021},
-type = {WorkingPaper},
-abstract  = {We are recently witnessing an increased adoption of microservice architectures by the industry for achieving scalability by functional decomposition, fault-tolerance by deployment of small and independent services, and polyglot persistence by the adoption of different database technologies specific to the needs of each service. Despite the accelerating industrial adoption and the extensive research on microservices, there is a lack of thorough investigation on the state of the practice and the major challenges faced by practitioners with regard to data management. To bridge this gap, this paper presents a detailed investigation of data management in microservices. Our exploratory study is based on the following methodology: (i) we conducted a systematic literature review of articles reporting the adoption of microservices in industry settings, where more than 300 articles were filtered down to 11 representative studies; (ii) we analyzed a set of 9 popular open-source microservice-based applications, selected out of more than 20 open-source projects; furthermore, (iii) to strengthen our evidence, we conducted an online survey that we then used to cross-validate the findings of the previous steps with the perceptions and experiences of over 120 practitioners and researchers. Through this process, we were able to categorize the state of practice and reveal several principled challenges that cannot be solved by software engineering practices, but rather need system-level support to alleviate the burden of practitioners. Based on the observations we also identified a series of research directions to achieve this goal. Fundamentally, novel database systems and data management tools that support isolation for microservices, which include fault isolation, performance isolation, data ownership, and independent schema evolution across microservices must be built to address the needs of this growing architectural style.},
-note={<font color="red">Preliminar version of paper accepted for publication at VLDB '21.</font>},
-url = {https://www.researchgate.net/publication/349704597_Data_Management_in_Microservices_State_of_the_Practice_Challenges_and_Research_Directions}
 }
 
 @inproceedings{LaignerKLSO20,
@@ -85,23 +93,23 @@ url = {https://www.researchgate.net/publication/349704597_Data_Management_in_Mic
 }
 
 @article{LAIGNER2021111125,
-title = {Cataloging dependency injection anti-patterns in software systems},
-journal = {Journal of Systems and Software},
-pages = {111125},
-year = {2021},
-issn = {0164-1212},
-doi = {https://doi.org/10.1016/j.jss.2021.111125},
-url = {https://www.sciencedirect.com/science/article/pii/S0164121221002223},
-author = {Rodrigo Laigner and Diogo Mendonça and Alessandro Garcia and Marcos Kalinowski},
-keywords = {Dependency injection, Dependency inversion, Inversion of control, Anti-pattern},
-abstract = {Context:
-Dependency Injection (DI) is a commonly applied mechanism to decouple classes from their dependencies in order to provide higher modularization. However, bad DI practices often lead to negative consequences, such as increasing coupling. Although white literature conjectures about the existence of DI anti-patterns, there is no evidence on their practical relevance, usefulness, and generality.
-Objective:
-The objective of this study is to propose and evaluate a catalog of DI anti-patterns and associated refactorings.
-Methodology:
-We reviewed existing reported DI anti-patterns in order to analyze their completeness. The limitations found in literature motivated proposing a novel catalog of 12 DI anti-patterns. We developed a tool to statically analyze the occurrence level of the candidate DI anti-patterns in both open-source and industry projects. Next, we survey practitioners to assess their perception on the relevance, usefulness, and their willingness on refactoring anti-pattern instances of the catalog.
-Results:
-Our static code analyzer tool showed a relative recall of 92.19% and high average precision. It revealed that at least 9 different DI anti-patterns appeared frequently in the analyzed projects. Besides, our survey confirmed the perceived relevance of the catalog and developers expressed their willingness to refactor instances of anti-patterns from source code.
-Conclusion:
-The catalog contains DI anti-patterns that occur in practice and that are perceived as useful. Sharing it with practitioners may help them to avoid such anti-patterns, thus improving source-code quality.}
+  title = {Cataloging dependency injection anti-patterns in software systems},
+  journal = {Journal of Systems and Software},
+  pages = {111125},
+  year = {2022},
+  issn = {0164-1212},
+  doi = {https://doi.org/10.1016/j.jss.2021.111125},
+  url = {https://www.sciencedirect.com/science/article/pii/S0164121221002223},
+  author = {Rodrigo Laigner and Diogo Mendonça and Alessandro Garcia and Marcos Kalinowski},
+  keywords = {Dependency injection, Dependency inversion, Inversion of control, Anti-pattern},
+  abstract = {Context:
+  Dependency Injection (DI) is a commonly applied mechanism to decouple classes from their dependencies in order to provide higher modularization. However, bad DI practices often lead to negative consequences, such as increasing coupling. Although white literature conjectures about the existence of DI anti-patterns, there is no evidence on their practical relevance, usefulness, and generality.
+  Objective:
+  The objective of this study is to propose and evaluate a catalog of DI anti-patterns and associated refactorings.
+  Methodology:
+  We reviewed existing reported DI anti-patterns in order to analyze their completeness. The limitations found in literature motivated proposing a novel catalog of 12 DI anti-patterns. We developed a tool to statically analyze the occurrence level of the candidate DI anti-patterns in both open-source and industry projects. Next, we survey practitioners to assess their perception on the relevance, usefulness, and their willingness on refactoring anti-pattern instances of the catalog.
+  Results:
+  Our static code analyzer tool showed a relative recall of 92.19% and high average precision. It revealed that at least 9 different DI anti-patterns appeared frequently in the analyzed projects. Besides, our survey confirmed the perceived relevance of the catalog and developers expressed their willingness to refactor instances of anti-patterns from source code.
+  Conclusion:
+  The catalog contains DI anti-patterns that occur in practice and that are perceived as useful. Sharing it with practitioners may help them to avoid such anti-patterns, thus improving source-code quality.}
 }
