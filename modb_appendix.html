@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Appendix</title>
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+    .topbar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 50px;
+      background: #f5f5f5;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 16px;
+      z-index: 10;
+    }
+    .btn {
+      padding: 8px 12px;
+      background: #0366d6;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    iframe {
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      height: calc(100% - 50px);
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="topbar">
+  <strong>MODB: A Cross-Stack DBMS for Event-based Microservices (Appendix)</strong>
+  <a class="btn" href="modb_appendix.pdf" download>Download PDF</a>
+</div>
+
+<iframe src="modb_appendix.pdf"></iframe>
+
+</body>
+</html>
